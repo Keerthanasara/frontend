@@ -1,0 +1,27 @@
+<div class="container">
+    <legend>Create Item</legend>
+    <form>
+        <div class="mb-3"><label for="Image" class="form-label">image</label><input type="text" class="form-control"
+                id="Image" aria-describedby="emailHelp" name="Image" [(ngModel)]="createCoupon.image">
+        </div>
+        <div class="mb-3">
+            <label for="offer" class="form-label">offer</label>
+            <input type="text" class="form-control" id="offer" aria-describedby="emailHelp" name="TrainName"
+                [(ngModel)]="createCoupon.offer">
+        </div>
+        <div class="mb-3"><label for="productInfo" class="form-label">productInfo</label>
+            <input type="text" class="form-control" id="ProductInfo" aria-describedby="emailHelp" name="ProductInfo"
+                [(ngModel)]="createCoupon.productinfo">
+        </div>
+        <div class="mb-3">
+            <label for="PromoCode" class="form-label">PromoCode</label> <input type="text" class="form-control"
+                id="PromoCode" aria-describedby="emailHelp" name="PromoCode" [(ngModel)]="createCoupon.promocode">
+        </div>
+ 
+        <div class="mb-3">
+
+           
+        <button type="button" (click)="create()" class="btn btn-primary">Submit</button>
+    
+</div>
+</form>

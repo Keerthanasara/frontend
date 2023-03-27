@@ -1,0 +1,28 @@
+<div class="container">
+    <legend>Create Item</legend>
+    <form>
+        <div class="mb-3"><label for="productid" class="form-label">id</label><input type="text" class="form-control"
+                id="productid" aria-describedby="emailHelp" name="TrainId" [(ngModel)]="product.id">
+        </div>
+        <div class="mb-3">
+            <label for="productname" class="form-label">name</label>
+            <input type="text" class="form-control" id="productname" aria-describedby="emailHelp" name="productName"
+                [(ngModel)]="product.name">
+        </div>
+        <div class="mb-3"><label for="source" class="form-label">price</label>
+            <input type="text" class="form-control" id="price" aria-describedby="emailHelp" name="price"
+                [(ngModel)]="product.price">
+        </div>
+        <div class="mb-3">
+            <label for="rating" class="form-label">rating</label> <input type="text" class="form-control"
+                id="rating" aria-describedby="emailHelp" name="rating" [(ngModel)]="product.rating">
+        </div>
+        <div class="mb-3">
+
+            <label for="imageurl" class="form-label">imageurl</label>
+            <input type="text" class="form-control" id="imageUrl" aria-describedby="emailHelp" name="imageUrl"
+                [(ngModel)]="product.imageUrl">
+        </div>
+        <button type="button" (click)="create()" class="btn btn-primary">Submit</button>
+    </form>
+</div>
